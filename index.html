@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR CCTV Access System</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#f4f7ff;line-height:1.7}
+header{background:#121a2e;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{font-size:22px;font-weight:bold;color:#69d6c5}
+nav a{color:white;text-decoration:none;margin:0 10px}
+.hero{padding:90px 8%;background:linear-gradient(120deg,#172b4d,#0b1020)}
+.hero h1{font-size:45px;line-height:1.2}
+.hero p{color:#c0cce0;font-size:18px;max-width:700px}
+.btn{display:inline-block;background:#69d6c5;color:#07151a;padding:12px 22px;border-radius:7px;text-decoration:none;font-weight:bold;margin-top:15px}
+section{padding:55px 8%}
+h2{font-size:30px;color:#69d6c5}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#121a2e;padding:22px;border:1px solid #293550;border-radius:12px}
+.card p{color:#c0cce0}
+.step{background:#121a2e;padding:15px;margin:12px 0;border-radius:8px}
+.note{background:#172b4d;padding:16px;border-left:4px solid #8aa8ff}
+footer{text-align:center;padding:25px;background:#121a2e;color:#c0cce0}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">QR CCTV ACCESS</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#workflow">Workflow</a>
+    <a href="#technology">Technology</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>QR-Based CCTV Access System</h1>
+  <p>
+    A smart project prototype designed to demonstrate
+    secure, request-based and time-limited CCTV video access
+    using QR codes and administrator approval.
+  </p>
+  <a href="#about" class="btn">Explore Project</a>
+</div>
+
+<section id="about">
+  <h2>About Our Project</h2>
+  <p>
+    The QR-Based CCTV Access System is a web application
+    prototype that allows users to request access to a
+    selected CCTV camera by scanning a QR code.
+    An administrator can review the request and approve
+    or reject it. Approved access is provided for a limited time.
+  </p>
+  <div class="note">
+    This is an academic demonstration prototype, not a
+    certified CCTV security product. Do not use it with
+    real or sensitive camera footage.
+  </div>
+</section>
+
+<section id="features">
+  <h2>Key Features</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>QR Code Generation</h3>
+      <p>Generate a unique QR code associated with a camera.</p>
+    </div>
+    <div class="card">
+      <h3>User Access Request</h3>
+      <p>Users can submit requests for camera access.</p>
+    </div>
+    <div class="card">
+      <h3>Admin Approval</h3>
+      <p>Administrator can approve or reject access requests.</p>
+    </div>
+    <div class="card">
+      <h3>Temporary Access</h3>
+      <p>Approved users receive time-limited video access.</p>
+    </div>
+    <div class="card">
+      <h3>OTP Verification</h3>
+      <p>A mock OTP step demonstrates an additional verification stage.</p>
+    </div>
+    <div class="card">
+      <h3>Audit Events</h3>
+      <p>Basic application events are recorded for demonstration.</p>
+    </div>
+  </div>
+</section>
+
+<section id="workflow">
+  <h2>How It Works</h2>
+  <div class="step">1. Admin adds a CCTV camera and generates its QR code.</div>
+  <div class="step">2. User scans the QR code.</div>
+  <div class="step">3. User submits an access request.</div>
+  <div class="step">4. Admin reviews and approves or rejects the request.</div>
+  <div class="step">5. Approved user gets temporary access to the demo video.</div>
+</section>
+
+<section id="technology">
+  <h2>Technology Used</h2>
+  <div class="cards">
+    <div class="card"><h3>Python</h3><p>Backend programming language.</p></div>
+    <div class="card"><h3>Flask</h3><p>Web application framework.</p></div>
+    <div class="card"><h3>HTML & CSS</h3><p>Website structure and styling.</p></div>
+    <div class="card"><h3>JavaScript</h3><p>Browser-side interactions.</p></div>
+    <div class="card"><h3>QR Code & Pillow</h3><p>QR generation and image handling.</p></div>
+  </div>
+</section>
+
+<section id="future">
+  <h2>Future Scope</h2>
+  <p>
+    Future improvements may include real OTP integration,
+    stronger authentication, secure audit storage,
+    improved user roles, durable video storage and
+    additional security testing.
+  </p>
+  <p>
+    Current limitations include mock OTP, spoofable browser
+    location and basic audit logging. Browser restrictions
+    cannot prevent screen recording.
+  </p>
+</section>
+
+<footer>
+  <p>QR-Based CCTV Access System | Academic Project</p>
+  <p>Developed as a BTech CSE Project Prototype</p>
+</footer>
+
+</body>
+</html>
